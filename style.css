@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand&family=Roboto:wght@300&display=swap');
+
+body {
+    background: linear-gradient(0deg, rgba(31,212,193,1) 0%, rgba(253,187,45,1) 100%);
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lables {
+    align-items: flex-start;
+}
+
+
+
+.input-fields {
+    align-items: center;
+}
+
+.inputs {
+    width: 22rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-fields, .lables {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 4.5rem;
+
+}
+
+.gender {
+    width: 16rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.male, .female {
+    display: inline;
+}
+
