@@ -1,14 +1,18 @@
 'use strict'
 
-const weight = document.getElementById('weight').value;
-const height = document.getElementById('height').value;
-const age = document.getElementById('weight').value;
-const gender = document.querySelector('.genders').value;
+const weight = document.getElementById('weight');
+const height = document.getElementById('height');
+const age = document.getElementById('age');
+const gender = document.querySelector('.genders');
 
 /* console.log(weight);
 console.log(height);
 console.log(age);
 console.log(gender); */
+
+weight.textContent = 0;
+height.textContent = 0;
+age.textContent = 0;
 
 const submitButton = document.getElementById('submit');
 const resetButton = document.getElementById('reset');

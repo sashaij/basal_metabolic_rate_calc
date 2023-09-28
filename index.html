@@ -8,33 +8,23 @@
 </head>
 <body>
     <h2 class="heading">Your Basal Metabolic Rate</h2>
-    <div class="form">
-        <div class="inputs">
-            <div class = "lables">
-                <label for="weight">Your weight in kilograms:</label>
-                <label for="height">Your height in centimetres:</label> 
-                <label for="age">Your age:</label>
+    <div class="form-container">
+        <div class="form">
+            <div class="lables">
+                <div>Height: </div>
+                <div>Weight: </div>
+                <div>Age: </div>
             </div>
             <div class="input-fields">
-                <input type="number" name="weight" id="weight" size="10">
-                <input type="number" name="height" id="height" size="10">
-                <input type="number" name="age" id="age" size="10">
+                <div class="inputs active"  id="height"></div>
+                <div class="inputs"  id="weight"></div>
+                <div class="inputs"  id="age"></div>
             </div>
         </div>
         <div class="gender">
-            <p>Your gender:</p>
-            <div class="male">
-                <label for="male">Male</label>
-                <input type="radio" name = "gender" id="male" class="genders" value="Male">
-            </div>
-            <div class="female">
-                <label for="male">Female</label>
-                <input type="radio" name = "gender" id="female" class="genders" value="Female">
-            </div>
-        </div>
-        <div class="buttons">
-            <input type="submit" name="submit" id="submit">
-            <input type="reset" name="reset" id="reset">
+            <div id="gender-label">Gender</div>
+            <div id="male">Male</div>
+            <div id="female">Female</div>
         </div>
     </div>
     <script src="scripts.js"></script>
