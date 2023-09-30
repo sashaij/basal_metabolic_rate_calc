@@ -10,6 +10,15 @@ body {
     align-items: center;
 }
 
+button.active {
+    border: 2px solid rgb(226, 28, 177);
+    background-color: rgba(245, 218, 97, 0.789);
+}
+
+.result {
+    font-size: 2rem;
+}
+
 .form-container{
     display: flex;
     flex-direction: column;
