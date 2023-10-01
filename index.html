@@ -9,25 +9,33 @@
 <body>
     <h2 class="heading">Your Basal Metabolic Rate Is</h2>
     <div class="result">0</div>
-    <div class="form-container">
-        <div class="form">
-            <div class="lables">
-                <div>Height: </div>
-                <div>Weight: </div>
-                <div>Age: </div>
+    <form>
+        <fieldset>
+            <div class="form-container">
+                <div class="form">
+                    <div class="lables">
+                        <label for="height">Height: </label>
+                        <label for="weight">Weight: </label>
+                        <label for="age">Age: </label>
+                    </div>
+                    <div class="input-fields">
+                        <input type="number" class="inputs active"  id="height">
+                        <input type="number" class="inputs"  id="weight">
+                        <input type="number" class="inputs"  id="age">
+                    </div>
+                </div>
+                <div>
+                    <div id="gender-label">Gender</div>
+                    <input type="radio" name="gender" value="male" id="male" checked>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">Female</label>
+                    <button type="submit" id="submit">Submit</button>
+                    <button type="reset" id="reset">Reset</button>
+                </div>
             </div>
-            <div class="input-fields">
-                <div class="inputs active"  id="height"></div>
-                <div class="inputs"  id="weight"></div>
-                <div class="inputs"  id="age"></div>
-            </div>
-        </div>
-        <div class="gender">
-            <div id="gender-label">Gender</div>
-            <button id="male" class="active">Male</button>
-            <button id="female">Female</button>
-        </div>
-    </div>
+        </fieldset>
+    </form>
     <script src="scripts.js"></script>
 </body>
 </html>
