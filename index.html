@@ -11,30 +11,34 @@
     <div class="result">0</div>
     <form>
         <fieldset>
-            <div class="form-container">
-                <div class="form">
-                    <div class="lables">
-                        <label for="height">Height: </label>
-                        <label for="weight">Weight: </label>
-                        <label for="age">Age: </label>
-                    </div>
-                    <div class="input-fields">
-                        <input type="number" class="inputs active"  id="height">
-                        <input type="number" class="inputs"  id="weight">
-                        <input type="number" class="inputs"  id="age">
-                    </div>
-                </div>
-                <div>
-                    <div id="gender-label">Gender</div>
-                    <input type="radio" name="gender" value="male" id="male" checked>
-                    <label for="male">Male</label>
-                    <input type="radio" name="gender" value="female" id="female">
-                    <label for="female">Female</label>
-                    <button type="submit" id="submit">Submit</button>
-                    <button type="reset" id="reset">Reset</button>
-                </div>
-            </div>
+            <legend>General</legend> 
+            <ul>
+                <li>
+                    <label for="weight">Weight: </label>
+                    <input type="number" class="parameters"  id="weight" name="weight" min="1" max="400" placeholder="Your weigth in kilograms">
+                </li>
+                <li>
+                    <label for="height">Height: </label>
+                    <input type="number" class="parameters"  id="height" name="heigth" min="1" max="300" placeholder="Your height in centimetres">
+                </li>
+                <li>
+                    <label for="age">Age: </label>
+                    <input type="number" class="parameters"  id="age" name="age" min="1" max="140" placeholder="Your age">
+                </li>
+            </ul>
         </fieldset>
+        <fieldset>
+            <legend>Gender</legend>       
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male" id="male" class="gender" checked>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female" id="female" class="gender">
+        </fieldset>
+        <div class="buttons">
+            
+                <button type="button" id="submit">Submit</button>
+                <button type="reset" id="reset">Reset</button>
+        </div>
     </form>
     <script src="scripts.js"></script>
 </body>

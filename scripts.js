@@ -27,7 +27,7 @@ const displayValues = () => {
     console.log('h: ' +  weight.value);
     console.log('w: ' + height.value);
     console.log('a: ' + age.value);
-    //console.log(gender.value);
+    console.log(gender.value);
 }
 
 
