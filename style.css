@@ -5,10 +5,13 @@
     --main-color-2: rgba(253,187,45,1);
     --border-color: #489190;
     --button-color: #fff7b0b8;
+    --main-font: 'Quicksand', sans-serif, Arial, Helvetica, sans-serif;
 }
 
 button {
+    font-family: var(--main-font);
     font-size: 1.5em;
+    font-weight: 800;
     background-color: var(--button-color);
     border: 1px solid black;
     border-radius: 5px;
@@ -17,7 +20,7 @@ button {
 body {
     background: linear-gradient(0deg, var(--main-color-1) 0%, var(--main-color-2) 100%);
     height: 100vh;
-    font-family: 'Quicksand', sans-serif, Arial, Helvetica, sans-serif;
+    font-family: var(--main-font);
     display: flex;
     flex-direction: column;
     justify-content: center;
