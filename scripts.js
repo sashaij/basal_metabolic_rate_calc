@@ -37,17 +37,14 @@ const inputRestrict = function () {
    if (weight.value > 250 || weight.value < 1) {
         alert("Error. Input WEIGHT between 1 and 250");
         weight.value = 0;
-        result.textContent = '0';
         return; 
     } else if (height.value > 300 || height.value < 1) {
         alert("Error. Input HEIGHT between 1 and 300");
         height.value = 0;
-        result.textContent = '0';
         return;
     } else if (age.value > 100 || age.value < 1) {
         alert("Error. Input AGE beween 1 and 100");
         age.value = 0;
-        result.textContent = '0';
         return;
     }
 }
